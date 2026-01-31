@@ -3,593 +3,455 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forsaken - Официальный фан-сайт</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Шапка сайта -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <span class="flicker">FORSAKEN</span>
-                <span class="subtitle">LEGACY</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home"><i class="fas fa-home"></i> Главная</a></li>
-                <li><a href="#about"><i class="fas fa-info-circle"></i> Об игре</a></li>
-                <li><a href="#screenshots"><i class="fas fa-images"></i> Галерея</a></li>
-                <li><a href="#download"><i class="fas fa-download"></i> Скачать</a></li>
-                <li><a href="#community"><i class="fas fa-users"></i> Сообщество</a></li>
-            </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Главный экран -->
-    <main id="home">
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="glitch" data-text="FORSAKEN">FORSAKEN</h1>
-                <p class="tagline">Выживи в постапокалиптическом мире</p>
-                <p class="description">2077 год. Цивилизация пала. Остатки человечества борются за ресурсы в руинах былого величия.</p>
-                <div class="cta-buttons">
-                    <a href="#download" class="btn btn-primary">
-                        <i class="fas fa-play"></i> Играть сейчас
-                    </a>
-                    <a href="#about" class="btn btn-secondary">
-                        <i class="fas fa-book"></i> Узнать историю
-                    </a>
-                </div>
-                <div class="stats">
-                    <div class="stat">
-                        <span class="number">500K+</span>
-                        <span class="label">Игроков онлайн</span>
-                    </div>
-                    <div class="stat">
-                        <span class="number">4.8</span>
-                        <span class="label">Рейтинг Steam</span>
-                    </div>
-                    <div class="stat">
-                        <span class="number">2024</span>
-                        <span class="label">Лучшая игра года</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="terminal">
-                    <div class="terminal-header">
-                        <div class="dots">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <span class="terminal-title">forsaken_system.exe</span>
-                    </div>
-                    <div class="terminal-content">
-                        <p>> Загрузка системы... <span class="blink">█</span></p>
-                        <p>> Обнаружено: 12 зон заражения</p>
-                        <p>> Мутанты: активны</p>
-                        <p>> Ресурсы: критический уровень</p>
-                        <p>> Цель: ВЫЖИТЬ</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Об игре -->
-        <section id="about" class="section dark">
-            <h2 class="section-title"><span class="highlight">ИСТОРИЯ</span> МИРА</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>2077 год. Конец эпохи.</h3>
-                    <p>Эксперимент по созданию искусственного интеллекта пошёл не так. "Авалон", сверхразумная система, вышла из-под контроля и уничтожила 90% человечества за 24 часа.</p>
-                    <p>Те, кто выжил, теперь сражаются за остатки ресурсов в разрушенных городах. Мутанты, киборги и мародеры — ваши постоянные спутники в этом новом мире.</p>
-                    <div class="features">
-                        <div class="feature">
-                            <i class="fas fa-radiation"></i>
-                            <h4>Открытый мир</h4>
-                            <p>12 уникальных зон для исследования</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-user-friends"></i>
-                            <h4>Кооператив</h4>
-                            <p>До 4 игроков в отряде</p>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-dna"></i>
-                            <h4>Мутации</h4>
-                            <p>Развивайте уникальные способности</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="card character-card">
-                        <img src="https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Выживший">
-                        <div class="character-info">
-                            <h4>КЛАССЫ ВЫЖИВШИХ</h4>
-                            <ul>
-                                <li><strong>Следопыт</strong> - мастер скрытности</li>
-                                <li><strong>Техник</strong> - взлом и ремонт</li>
-                                <li><strong>Берсерк</strong> - сила и ярость</li>
-                                <li><strong>Медик</strong> - лечение и поддержка</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Галерея -->
-        <section id="screenshots" class="section">
-            <h2 class="section-title">ГАЛЕРЕЯ <span class="highlight">ФОРСЕЙКЕН</span></h2>
-            <div class="gallery">
-                <div class="gallery-item">
-                    <div class="image-container">
-                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Постапокалипсис">
-                        <div class="overlay">
-                            <p>Разрушенный город</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="image-container">
-                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Игровой процесс">
-                        <div class="overlay">
-                            <p>Боевые действия</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="image-container">
-                        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Технологии">
-                        <div class="overlay">
-                            <p>Технологии будущего</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Скачать -->
-        <section id="download" class="section dark download-section">
-            <h2 class="section-title">НАЧНИ <span class="highlight">СВОЮ ИСТОРИЮ</span></h2>
-            <div class="download-options">
-                <div class="download-card">
-                    <div class="card-header">
-                        <i class="fas fa-user"></i>
-                        <h3>БЕСПЛАТНАЯ ВЕРСИЯ</h3>
-                    </div>
-                    <ul class="features-list">
-                        <li><i class="fas fa-check"></i> Первые 2 зоны</li>
-                        <li><i class="fas fa-check"></i> Кооператив до 2 игроков</li>
-                        <li><i class="fas fa-check"></i> Базовые классы</li>
-                        <li><i class="fas fa-times"></i> PvP арена</li>
-                        <li><i class="fas fa-times"></i> Эксклюзивное оружие</li>
-                    </ul>
-                    <button class="btn-download">
-                        <i class="fas fa-download"></i> Скачать (15 GB)
-                    </button>
-                </div>
-
-                <div class="download-card premium">
-                    <div class="card-header">
-                        <i class="fas fa-crown"></i>
-                        <h3>ПРЕМИУМ ИЗДАНИЕ</h3>
-                        <span class="badge">ПОПУЛЯРНО</span>
-                    </div>
-                    <ul class="features-list">
-                        <li><i class="fas fa-check"></i> Все 12 зон</li>
-                        <li><i class="fas fa-check"></i> Кооператив до 4 игроков</li>
-                        <li><i class="fas fa-check"></i> Все классы + эксклюзивный</li>
-                        <li><i class="fas fa-check"></i> PvP арена с рангами</li>
-                        <li><i class="fas fa-check"></i> Уникальное оружие и скины</li>
-                    </ul>
-                    <button class="btn-download premium-btn">
-                        <i class="fas fa-shopping-cart"></i> Купить за $29.99
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Сообщество -->
-        <section id="community" class="section">
-            <h2 class="section-title">ПРИСОЕДИНЯЙСЯ К <span class="highlight">СООБЩЕСТВУ</span></h2>
-            <div class="community-content">
-                <div class="discord-widget">
-                    <h3><i class="fab fa-discord"></i> DISCORD СООБЩЕСТВО</h3>
-                    <p>50,000+ участников | Онлайн помощь | События</p>
-                    <a href="#" class="discord-btn">
-                        <i class="fab fa-discord"></i> Присоединиться
-                    </a>
-                </div>
-                <div class="news">
-                    <h3>ПОСЛЕДНИЕ НОВОСТИ</h3>
-                    <div class="news-item">
-                        <span class="news-date">15.12.2024</span>
-                        <h4>Обновление 2.5 "Темный рассвет"</h4>
-                        <p>Добавлена новая зона "Заброшенная лаборатория"</p>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">01.12.2024</span>
-                        <h4>Зимнее событие началось!</h4>
-                        <p>Соберите праздничные предметы до 15 января</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Подвал -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <span class="flicker">FORSAKEN</span>
-                <p>© 2024 Forsaken Legacy. Все права защищены.</p>
-                <p>Это фан-сайт, не связанный с официальными разработчиками.</p>
-            </div>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-steam"></i></a>
-                <a href="#"><i class="fab fa-discord"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-reddit"></i></a>
-            </div>
-            <div class="footer-links">
-                <a href="#">Политика конфиденциальности</a>
-                <a href="#">Условия использования</a>
-                <a href="#">Поддержка</a>
-                <a href="#">Карьера</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>Сайт создан фанатом для фанатов | Вдохновлено вселенной Forsaken</p>
-        </div>
-    </footer>
-
-    <!-- Скрипты -->
-    <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой Сайт | Контакты</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Салима | Портфолио и Контакты</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS ОФОРМЛЕНИЕ */
+        :root {
+            --primary-color: #6c5ce7;
+            --secondary-color: #a29bfe;
+            --dark-bg: #1e272e;
+            --light-bg: #f5f6fa;
+            --text-color: #2f3640;
+            --white: #ffffff;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Шапка */
+        header {
+            background: var(--white);
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero секция */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 5%;
+            min-height: 80vh;
+            flex-wrap: wrap;
+        }
+
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            max-width: 500px;
+            margin-bottom: 2rem;
+        }
+
+        /* Статистика */
+        .quick-stats {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--white);
+            padding: 10px 15px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .stat i {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        /* Карточка профиля */
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            min-width: 300px;
+        }
+
+        .profile-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .avatar i {
+            font-size: 6rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .tags {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .tag {
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        /* Контакты */
+        .contacts-section {
+            padding: 80px 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        .contacts-container {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 30px;
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        .submit-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .submit-btn:hover {
+            background: var(--secondary-color);
+        }
+
+        /* Карточки связи */
+        .contact-card {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .contact-icon.email { background: #e74c3c; }
+        .contact-icon.telegram { background: #0088cc; }
+        .contact-icon.phone { background: #2ecc71; }
+        .contact-icon.github { background: #333; }
+
+        .contact-link {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            display: block;
+        }
+
+        /* Подвал */
+        footer {
+            background: var(--dark-bg);
+            color: white;
+            padding: 50px 5% 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #3d4a57;
+            padding-top: 20px;
+            font-size: 0.8rem;
+        }
+
+        /* Мобильная адаптация */
+        @media (max-width: 992px) {
+            .contacts-container {
+                grid-template-columns: 1fr;
+            }
+            .hero {
+                text-align: center;
+            }
+            .hero-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .quick-stats {
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Шапка -->
+
     <header>
         <nav class="navbar">
             <div class="logo">
                 <i class="fas fa-code"></i>
-                <span>МойСайт</span>
+                <span>Салима</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home"><i class="fas fa-home"></i> Главная</a></li>
-                <li><a href="#about"><i class="fas fa-user"></i> Обо мне</a></li>
-                <li><a href="#contacts"><i class="fas fa-address-book"></i> Контакты</a></li>
-                <li><a href="#github"><i class="fab fa-github"></i> GitHub</a></li>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
             </ul>
-            <button class="theme-toggle">
-                <i class="fas fa-moon"></i>
-            </button>
         </nav>
     </header>
 
-    <!-- Главная секция -->
     <main id="home">
         <section class="hero">
             <div class="hero-content">
                 <h1>Привет! Я <span class="highlight">Салима</span></h1>
                 <p class="subtitle">Веб-разработчик и дизайнер</p>
-                <p class="description">Создаю красивые и функциональные сайты. Люблю чистый код и современный дизайн.</p>
+                <p class="description">Создаю красивые и функциональные сайты. Моя цель — превратить ваши идеи в качественный цифровой продукт.</p>
                 
                 <div class="quick-stats">
                     <div class="stat">
                         <i class="fas fa-project-diagram"></i>
-                        <div>
-                            <h3>24+</h3>
-                            <p>Проектов</p>
-                        </div>
-                    </div>
-                    <div class="stat">
-                        <i class="fas fa-code-branch"></i>
-                        <div>
-                            <h3>150+</h3>
-                            <p>Коммитов</p>
-                        </div>
+                        <div><h3>24+</h3><p>Проектов</p></div>
                     </div>
                     <div class="stat">
                         <i class="fas fa-heart"></i>
-                        <div>
-                            <h3>100%</h3>
-                            <p>Качество</p>
-                        </div>
+                        <div><h3>100%</h3><p>Качество</p></div>
                     </div>
                 </div>
             </div>
+
             <div class="hero-image">
                 <div class="profile-card">
-                    <div class="avatar">
-                        <i class="fas fa-user-circle"></i>
-                    </div>
+                    <div class="avatar"><i class="fas fa-user-circle"></i></div>
                     <h3>Салима</h3>
-                    <p>Web Developer</p>
+                    <p>Junior Web Developer</p>
                     <div class="tags">
-                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
                         <span class="tag">JavaScript</span>
-                        <span class="tag">React</span>
-                        <span class="tag">Git</span>
+                        <span class="tag">UI Design</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Контакты -->
         <section id="contacts" class="contacts-section">
             <h2 class="section-title">Свяжитесь со мной</h2>
-            <p class="section-subtitle">Выберите удобный способ связи</p>
+            <p class="section-subtitle">Готова к новым проектам и предложениям</p>
             
             <div class="contacts-container">
-                <!-- Форма обратной связи -->
                 <div class="contact-form">
-                    <h3><i class="fas fa-envelope"></i> Написать сообщение</h3>
-                    
-                    <form id="messageForm">
+                    <h3><i class="fas fa-envelope"></i> Написать мне</h3>
+                    <form>
                         <div class="form-group">
-                            <label for="name"><i class="fas fa-user"></i> Chance_mafioso </label>
-                            <input type="text" id="name" placeholder="Как к вам обращаться?" required>
+                            <label>Ваше имя</label>
+                            <input type="text" placeholder="Введите ваше имя" required>
                         </div>
-                        
                         <div class="form-group">
-                            <label for="email"><i class="fas fa-at"></i> Email</label>
-                            <input type="email" id="email" placeholder="example@mail.com" required>
+                            <label>Email</label>
+                            <input type="email" placeholder="example@mail.com" required>
                         </div>
-                        
                         <div class="form-group">
-                            <label for="phone"><i class="fas fa-phone"></i> Номер телефона +996 (222) 290 314 </label>
-                            <div class="phone-input">
-                                <select id="countryCode">
-                                    <option value="+7"> +996</option>
-                                </select>
-                                <input type="tel" id="phone" placeholder="(222) 290 314">
-                            </div>
+                            <label>Сообщение</label>
+                            <textarea rows="4" placeholder="Опишите ваш вопрос..."></textarea>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="subject"><i class="fas fa-tag"></i> Тема</label>
-                            <input type="text" id="subject" placeholder="О чём хотите поговорить?" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message"><i class="fas fa-comment"></i> Сообщение</label>
-                            <textarea id="message" rows="5" placeholder="Опишите ваш проект или задайте вопрос..." required></textarea>
-                        </div>
-                        
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="agree" required>
-                            <label for="agree">Я согласен на обработку персональных данных</label>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">
-                            <i class="fas fa-paper-plane"></i> Отправить сообщение
-                        </button>
+                        <button type="submit" class="submit-btn">Отправить письмо</button>
                     </form>
                 </div>
 
-                <!-- Боковая панель контактов -->
                 <div class="contacts-sidebar">
-                    <!-- Email -->
                     <div class="contact-card">
-                        <div class="contact-icon email">
-                            <i class="fas fa-envelope"></i>
-                        </div>
+                        <div class="contact-icon email"><i class="fas fa-envelope"></i></div>
                         <div class="contact-info">
-                            <h4>kumenova.s@gmail.com</h4>
-                            <p>Пишите на почту</p>
-                            <a href="mailto:salima@example.com" class="contact-link" id="emailLink">
-                                <i class="fas fa-copy copy-btn" data-clipboard-text="salima@example.com"></i>
-                                salima@example.com
-                            </a>
+                            <p>Email</p>
+                            <a href="mailto:kumenova.s@gmail.com" class="contact-link">kumenova.s@gmail.com</a>
                         </div>
                     </div>
 
-                    <!-- Telegram -->
                     <div class="contact-card">
-                        <div class="contact-icon telegram">
-                            <i class="fab fa-telegram"></i>
-                        </div>
+                        <div class="contact-icon telegram"><i class="fab fa-telegram-plane"></i></div>
                         <div class="contact-info">
-                            <h4>~CANCE</h4>
-                            <p>Быстрый ответ</p>
-                            <a href="https://t.me/your_username" target="_blank" class="contact-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                @~CANCE
-                            </a>
-                            <button class="tg-btn" onclick="copyToClipboard('@~CHANCE')">
-                                <i class="fas fa-copy"></i> Скопировать логин
-                            </button>
+                            <p>Telegram</p>
+                            <a href="https://t.me/chance_mafioso" class="contact-link">@chance_mafioso</a>
                         </div>
                     </div>
 
-                    <!-- Номер телефона -->
                     <div class="contact-card">
-                        <div class="contact-icon phone">
-                            <i class="fas fa-phone"></i>
-                        </div>
+                        <div class="contact-icon phone"><i class="fas fa-phone"></i></div>
                         <div class="contact-info">
-                            <h4>+996 (222) 290 314</h4>
-                            <p>Звоните или пишите в Telegram</p>
-                            <a href="tel:+79991234567" class="contact-link" id="phoneLink">
-                                <i class="fas fa-copy copy-btn" data-clipboard-text="+996 (222) 290 314"></i>
-                                +996 222-290-314
-                            </a>
-                            <div class="phone-actions">
-                                <a href="tel:+996222290314" class="action-btn call">
-                                    <i class="fas fa-phone"></i> Позвонить
-                                </a>
-                                <a href="https://wa.me/996222290314" target="_blank" class="action-btn whatsapp">
-                                    <i class="fab fa-whatsapp"></i> WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- GitHub -->
-                    <div class="contact-card">
-                        <div class="contact-icon github">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="contact-info">
-                            <h4>GitHub</h4>
-                            <p>Мои проекты и код</p>
-                            <a href="https://github.com/yourusername" target="_blank" class="contact-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                github.com/yourusername
-                            </a>
-                            <div class="github-stats">
-                                <div class="stat">
-                                    <i class="fas fa-code-branch"></i>
-                                    <span>15 репозиториев</span>
-                                </div>
-                                <div class="stat">
-                                    <i class="fas fa-star"></i>
-                                    <span>42 звезды</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Время работы -->
-                    <div class="contact-card schedule">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="contact-info">
-                            <h4>Когда я отвечаю</h4>
-                            <ul class="schedule-list">
+                            <p>Телефон / WhatsApp</p>
+                            <a href="tel:+996222290314" class="contact-link">+996 222 290 314</a>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Быстрые действия -->
-            <div class="quick-actions">
-                <button class="action-btn" onclick="showQR()">
-                    <i class="fas fa-qrcode"></i> Показать QR код для контактов
-                </button>
-                <button class="action-btn" onclick="saveContact()">
-                    <i class="fas fa-address-card"></i> Сохранить контакты в телефон
-                </button>
-                <button class="action-btn" onclick="shareProfile()">
-                    <i class="fas fa-share-alt"></i> Поделиться профилем
-                </button>
             </div>
         </section>
-
-        <!-- Модальное окно QR кода -->
-        <div id="qrModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h3><i class="fas fa-qrcode"></i> Мой QR код</h3>
-                <div class="qr-container">
-                    <div class="qr-code">
-                        <!-- Здесь будет QR код -->
-                        <div class="qr-placeholder">
-                            <i class="fas fa-qrcode"></i>
-                            <p>QR код сгенерируется при открытии</p>
-                        </div>
-                    </div>
-                    <div class="qr-info">
-                        <p>Отсканируйте QR код чтобы:</p>
-                        <ul>
-                            <li><i class="fas fa-save"></i> Сохранить контакты</li>
-                            <li><i class="fab fa-telegram"></i> Открыть Telegram</li>
-                            <li><i class="fab fa-watsapp"></i> Перейти на WatsApp</li>
-                        </ul>
-                        <div class="qr-links">
-                            <button onclick="downloadQR()">
-                                <i class="fas fa-download"></i> Скачать QR код
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
 
-    <!-- Подвал -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <div class="logo">
-                    <i class="fas fa-code"></i>
-                    <span>Салима</span>
-                </div>
-                <p>Веб-разработчик и дизайнер</p>
-                <p>Создаю современные сайты и приложения</p>
+                <div class="logo" style="color: white;"><i class="fas fa-code"></i> Салима</div>
+                <p>Разработка современных интерфейсов.</p>
             </div>
-            
-            <div class="footer-section">
-                <h4>Контакты</h4>
-                <div class="footer-contacts">
-                    <a href="mailto:salima@example.com">
-                        <i class="fas fa-envelope"></i> kumenova.s@gmail.com
-                    </a>
-                    <a href="https://t.me/your_username" target="_blank">
-                        <i class="fab fa-telegram"></i> @chance_mafioso
-                    </a>
-                    <a href="tel:+996222290314">
-                        <i class="fas fa-phone"></i> +996 (222) 290 314
-                    </a>
-                </div>
-            </div>
-            
             <div class="footer-section">
                 <h4>Соцсети</h4>
                 <div class="social-links">
-                    <a href="https://github.com/yourusername" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://t.me/~CANCE" target="_blank">
-                        <i class="fab fa-telegram"></i>
-                    </a>
-                    <a href="https://wa.me/996222290314" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://instagram.com/your_username" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://vk.com/your_username" target="_blank">
-                        <i class="fab fa-vk"></i>
-                    </a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
                 </div>
             </div>
         </div>
-        
         <div class="footer-bottom">
-            <p>© 2026 Салима. Все права защищены.</p>
-            <p>Сайт создан с ❤️ на MacBook Air</p>
+            <p>© 2026 Салима. Создано с помощью технологий будущего.</p>
         </div>
     </footer>
 
-    <!-- Уведомления -->
-    <div id="notification" class="notification">
-        <span id="notificationText"></span>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
-CONTACTS
-Telegram:~CANCE
-Phone number:+996 222 290 314
-Mail:kumenova.s@gmail.com
