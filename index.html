@@ -455,3 +455,27 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Камень Ножницы Бумага</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Камень, Ножницы, Бумага!</h1>
+    
+    <div class="game-buttons">
+        <button onclick="playGame('rock')">🪨 Камень</button>
+        <button onclick="playGame('paper')">📄 Бумага</button>
+        <button onclick="playGame('scissors')">✂️ Ножницы</button>
+    </div>
+
+    <div class="result-box">
+        <p id="user-move">Ваш ход: </p>
+        <p id="computer-move">Ход компьютера: </p>
+        <h2 id="winner-text">Кто же победит?</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
