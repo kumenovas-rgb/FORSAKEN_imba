@@ -479,3 +479,216 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салима | AI Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* СОХРАНЯЕМ ТВОИ СТИЛИ */
+        :root {
+            --primary-color: #6c5ce7;
+            --secondary-color: #a29bfe;
+            --dark-bg: #1e272e;
+            --light-bg: #f5f6fa;
+            --text-color: #2f3640;
+            --white: #ffffff;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        body { background-color: var(--light-bg); color: var(--text-color); line-height: 1.6; }
+
+        header { background: var(--white); padding: 1rem 5%; position: sticky; top: 0; z-index: 1000; box-shadow: var(--shadow); }
+        .navbar { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); display: flex; align-items: center; gap: 10px; }
+        .nav-menu { display: flex; list-style: none; gap: 20px; }
+        .nav-menu a { text-decoration: none; color: var(--text-color); font-weight: 500; transition: var(--transition); }
+        .nav-menu a:hover { color: var(--primary-color); }
+
+        /* HERO SECTION */
+        .hero { display: flex; align-items: center; justify-content: space-between; padding: 80px 5%; min-height: 80vh; flex-wrap: wrap; }
+        .hero-content { flex: 1; min-width: 300px; }
+        h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+        .highlight { color: var(--primary-color); }
+        .subtitle { font-size: 1.5rem; color: var(--secondary-color); font-weight: 500; margin-bottom: 1rem; }
+        .description { max-width: 500px; margin-bottom: 2rem; }
+
+        /* НОВЫЕ СТИЛИ ДЛЯ ИИ */
+        .ai-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            margin-top: 20px;
+            border: 2px dashed var(--secondary-color);
+        }
+        .ai-status { font-size: 0.9rem; color: var(--primary-color); font-weight: 600; margin-bottom: 10px; }
+        #ai-result { font-style: italic; color: #555; }
+        .upload-btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: inline-block;
+            transition: var(--transition);
+            margin-bottom: 10px;
+        }
+        .upload-btn:hover { background: var(--secondary-color); }
+        #image-preview { max-width: 100%; border-radius: 10px; margin-top: 10px; display: none; }
+
+        /* ОСТАЛЬНЫЕ СЕКЦИИ */
+        .quick-stats { display: flex; gap: 25px; flex-wrap: wrap; margin-bottom: 20px; }
+        .stat { display: flex; align-items: center; gap: 10px; background: var(--white); padding: 10px 15px; border-radius: 12px; box-shadow: var(--shadow); }
+        .stat i { color: var(--primary-color); font-size: 1.5rem; }
+
+        .hero-image { flex: 1; display: flex; justify-content: center; min-width: 300px; }
+        .profile-card { background: var(--white); padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow); text-align: center; width: 100%; max-width: 350px; }
+        .avatar i { font-size: 6rem; color: var(--primary-color); margin-bottom: 1rem; }
+        .tags { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+        .tag { background: var(--primary-color); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; }
+
+        .contacts-section { padding: 80px 5%; }
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 40px; }
+        .contacts-container { display: grid; grid-template-columns: 1.5fr 1fr; gap: 30px; }
+        .contact-form { background: var(--white); padding: 30px; border-radius: 20px; box-shadow: var(--shadow); }
+        .form-group { margin-bottom: 15px; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; }
+        .submit-btn { background: var(--primary-color); color: white; border: none; padding: 15px; border-radius: 8px; width: 100%; cursor: pointer; font-weight: 600; }
+
+        footer { background: var(--dark-bg); color: white; padding: 50px 5% 20px; margin-top: 50px; }
+        .footer-bottom { text-align: center; border-top: 1px solid #3d4a57; padding-top: 20px; font-size: 0.8rem; }
+
+        @media (max-width: 992px) { .contacts-container { grid-template-columns: 1fr; } .hero { text-align: center; } .hero-content { display: flex; flex-direction: column; align-items: center; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><i class="fas fa-code"></i><span>Салима</span></div>
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="https://github.com/kumenovas-rgb" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Привет! Я <span class="highlight">Салима</span></h1>
+                <p class="subtitle">Веб-разработчик и дизайнер</p>
+                <p class="description">Я добавила на этот сайт нейросеть! Загрузи картинку ниже, и ИИ попробует описать текстом то, что на ней изображено.</p>
+                
+                <div class="ai-box">
+                    <h3><i class="fas fa-robot"></i> ИИ-Экстрактор текста</h3>
+                    <p class="ai-status" id="status">Статус: Готов к работе</p>
+                    
+                    <label for="image-upload" class="upload-btn">
+                        <i class="fas fa-cloud-upload-alt"></i> Выбрать картинку
+                    </label>
+                    <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                    
+                    <img id="image-preview" src="" alt="Предпросмотр">
+                    <div id="ai-result">Результат появится здесь после обработки...</div>
+                </div>
+
+                <div class="quick-stats" style="margin-top: 30px;">
+                    <div class="stat"><i class="fas fa-project-diagram"></i><div><h3>24+</h3><p>Проектов</p></div></div>
+                    <div class="stat"><i class="fas fa-brain"></i><div><h3>AI</h3><p>Интеграция</p></div></div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="avatar"><i class="fas fa-user-circle"></i></div>
+                    <h3>Салима</h3>
+                    <p>Junior Web Developer</p>
+                    <div class="tags">
+                        <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JS</span><span class="tag">Transformers.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts-section">
+            <h2 class="section-title">Свяжитесь со мной</h2>
+            <div class="contacts-container">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group"><label>Ваше имя</label><input type="text" required></div>
+                        <div class="form-group"><label>Email</label><input type="email" required></div>
+                        <div class="form-group"><label>Сообщение</label><textarea rows="4"></textarea></div>
+                        <button type="submit" class="submit-btn">Отправить письмо</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2026 Салима. Работает на базе Hugging Face Transformers.js</p>
+        </div>
+    </footer>
+
+    <script type="module">
+        // Импортируем библиотеку прямо из интернета
+        import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2';
+
+        const status = document.getElementById('status');
+        const resultDiv = document.getElementById('ai-result');
+        const imageUpload = document.getElementById('image-upload');
+        const imagePreview = document.getElementById('image-preview');
+
+        let detector;
+
+        // Загрузка модели при первом использовании
+        async function initAI() {
+            if (!detector) {
+                status.innerText = 'Статус: Загрузка модели ИИ (около 20МБ)...';
+                // Используем легкую модель, которая описывает изображения
+                detector = await pipeline('image-to-text', 'Xenova/vit-gpt2-image-captioning');
+                status.innerText = 'Статус: ИИ готов!';
+            }
+        }
+
+        imageUpload.addEventListener('change', async (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            // Показываем превью картинки
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                imagePreview.src = event.target.result;
+                imagePreview.style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+
+            // Запускаем ИИ
+            try {
+                await initAI();
+                status.innerText = 'Статус: Думаю... анализирую картинку...';
+                resultDiv.innerText = 'Обработка...';
+
+                const output = await detector(imagePreview.src);
+                
+                status.innerText = 'Статус: Готово!';
+                resultDiv.innerHTML = `<strong>Результат (на англ.):</strong> ${output[0].generated_text}`;
+            } catch (err) {
+                status.innerText = 'Статус: Ошибка :( ';
+                resultDiv.innerText = 'Произошла ошибка при обработке.';
+                console.error(err);
+            }
+        });
+    </script>
+</body>
+</html>
